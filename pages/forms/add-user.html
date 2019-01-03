@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>User Profiles</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <script src="../../js/w3.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <div w3-include-HTML="../../partials/_navbar.html"></div>
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <div w3-include-HTML="../../partials/_sidebar.html"></div>
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              New User
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Basic information</h4>
+                  <form class="form-inline">
+                    <div class="form-group mb-2 mr-sm-2">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Name">
+                    </div>
+                    <div class="form-group mb-2 mr-sm-2">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                    </div>
+                    <div class="form-group mb-2 mr-sm-2">
+                      <label class="sr-only" for="profile-image">Profile image</label>
+                      <input type="file" class="form-control" id="profile-image" placeholder="Profile">
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mb-2">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <ul class="list-unstyled text-right my-5">
+                        <li class="my-3">
+                          Address &nbsp;
+                          <button type="button" data-toggle="modal" data-target="#addressFormModal" class="btn btn-gradient-primary btn-rounded btn-icon">
+                            <i class="mdi mdi-account-card-details"></i>
+                          </button>
+                        </li>
+                        <li class="p-3 my-3">
+                          Relatives &nbsp;
+                          <button type="button" data-toggle="modal" data-target="#relativesFormModal" class="btn btn-gradient-primary btn-rounded btn-icon">
+                            <i class="mdi mdi-account-multiple-outline"></i>
+                          </button>
+                        </li>
+                        <li class="my-3">
+                          Relatives &nbsp;
+                          <button type="button" class="btn btn-gradient-primary btn-rounded btn-icon">
+                            <i class="mdi mdi-home-outline"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-2">
+                      <div>
+                        <ul class="list-inline m-0 text-center">
+
+                          <li class="list-inline-item">
+                            <button type="button" data-toggle="modal" data-target="#relativesFormModal" class="btn btn-gradient-primary btn-rounded btn-icon">
+                              <i class="mdi mdi-account-multiple-outline"></i>
+                            </button>
+                            <br>
+                            Relatives &nbsp;
+                          </li>
+
+                        </ul>
+                        <label for="userImage" class="d-flex align-items-center flex-column py-3">
+                          <img src="https://via.placeholder.com/100x100" alt="" class="rounded-circle">
+                          <input type="file" id="userImage" class="d-none">
+                          <small class="text-capitalize">upload image</small>
+                        </label>
+                        <ul class="list-inline text-center">
+
+                          <li class="list-inline-item">
+                            <button type="button" class="btn btn-gradient-primary btn-rounded btn-icon">
+                              <i class="mdi mdi-home-outline"></i>
+                            </button>
+                            <br>
+                            Address &nbsp;
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <ul class="list-unstyled text-left my-5">
+                        <li class="my-3">
+                          <button type="button" data-toggle="modal" data-target="#addressFormModal" class="btn btn-gradient-primary btn-rounded btn-icon">
+                            <i class="mdi mdi-account-card-details"></i>
+                          </button>
+                          Address &nbsp;
+                        </li>
+                        <li class="p-3 my-3">
+                          <button type="button" data-toggle="modal" data-target="#relativesFormModal" class="btn btn-gradient-primary btn-rounded btn-icon">
+                            <i class="mdi mdi-account-multiple-outline"></i>
+                          </button>
+                          Relatives &nbsp;
+                        </li>
+                        <li class="my-3">
+                          <button type="button" class="btn btn-gradient-primary btn-rounded btn-icon">
+                            <i class="mdi mdi-home-outline"></i>
+                          </button>
+                          Relatives &nbsp;
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <div w3-include-HTML="../../partials/_footer.html"></div>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <div w3-include-HTML="../modals/address-form-modal.html"></div>
+  <div w3-include-HTML="../modals/relatives-form-modal.html"></div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/file-upload.js"></script>
+  <!-- End custom js for this page-->
+  <script>
+    w3.includeHTML();
+  </script>
+</body>
+
+</html>
